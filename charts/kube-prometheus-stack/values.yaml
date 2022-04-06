@@ -31,32 +31,32 @@ commonLabels: {}
 ## Create default rules for monitoring the cluster
 ##
 defaultRules:
-  create: true
+  create: false
   rules:
-    alertmanager: true
-    etcd: true
-    configReloaders: true
-    general: true
+    alertmanager: false
+    etcd: false
+    configReloaders: false
+    general: false
     k8s: true
-    kubeApiserver: true
-    kubeApiserverAvailability: true
-    kubeApiserverSlos: true
-    kubelet: true
-    kubeProxy: true
-    kubePrometheusGeneral: true
-    kubePrometheusNodeRecording: true
-    kubernetesApps: true
-    kubernetesResources: true
-    kubernetesStorage: true
-    kubernetesSystem: true
-    kubeScheduler: true
-    kubeStateMetrics: true
-    network: true
+    kubeApiserver: false
+    kubeApiserverAvailability: false
+    kubeApiserverSlos: false
+    kubelet: false
+    kubeProxy: false
+    kubePrometheusGeneral: false
+    kubePrometheusNodeRecording: false
+    kubernetesApps: false
+    kubernetesResources: false
+    kubernetesStorage: false
+    kubernetesSystem: false
+    kubeScheduler: false
+    kubeStateMetrics: false
+    network: false
     node: true
-    nodeExporterAlerting: true
-    nodeExporterRecording: true
+    nodeExporterAlerting: false
+    nodeExporterRecording: false
     prometheus: true
-    prometheusOperator: true
+    prometheusOperator: false
 
   ## Reduce app namespace alert scope
   appNamespacesTarget: ".*"
